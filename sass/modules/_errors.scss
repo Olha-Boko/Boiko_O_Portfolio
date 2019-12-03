@@ -1,0 +1,47 @@
+body{
+    background-color: $main-color;
+    .error-page {
+        text-decoration: underline;
+        color: $light-blue; 
+        font-size: 30px;
+        font-family: $paragraph-font;
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+       
+    
+    }
+}
+.error-section {
+    color: $dark-blue; 
+    pre {
+        
+        font-size: 30px;
+        font-family: $paragraph-font;
+        text-decoration: none;
+        color: $dark-blue;
+        //font-size: 20px;
+        text-align: center;
+    }
+    h1 {
+        margin-top: 60px;
+        font-family: $heading-font;
+        font-size: 60px;
+        display: block;
+        text-align: center;
+        }
+    h4 {
+        font-family: $heading-font;
+        font-size: 40px;
+        display: block;
+        text-align: center;
+    }  
+    h3 {
+        font-family: $heading-font;
+        font-size: 200px;
+        margin: 50px auto; 
+        display: block;
+        text-align: center;
+      
+    }  
+}

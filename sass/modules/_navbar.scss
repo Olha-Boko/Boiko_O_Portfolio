@@ -1,0 +1,60 @@
+// ---------------navigation-----------------------------
+#mainNav
+{
+  
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#mainNav button
+{
+  background: url(../images/burger_menu.svg) center no-repeat;
+  width: 54px;
+  height: 54px;
+  border: 0px;
+  transition: all 400ms ease;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#mainNav button.expanded
+{
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#mainNav li a
+{
+  display: block;
+  //padding: 10px 0 10px 0; /*trbl*/
+  color: $dark-blue;
+  text-align: center;
+  font-family: $paragraph-font;
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: 40px;
+
+  }
+  #mainNav li a:hover
+  {
+    color: $light-blue;
+    transition: all 0.3s;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: $light-blue;
+   
+    }
+  
+#burgerCon
+{
+  //margin-top: 20px;
+  display: none;
+ // margin-bottom: 20px;
+}
+
+#burgerCon.slideToggle
+{
+  display: block;
+}

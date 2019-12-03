@@ -1,0 +1,121 @@
+.port-pieces { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+
+    .project {
+        flex: 0 1 400px;
+        text-align: center;
+        //padding: 10px;
+        position: relative;
+        overflow: hidden;
+        width: 400px; 
+        height: 300px;
+        //width: 400px;
+        margin-bottom: 80px;
+
+        .project_img {
+             max-width: 400px; 
+             //height: 100%;
+            }
+        .text {
+            text-align: center;
+            margin-top: -280px;
+            z-index: 3;
+            color: $text-color;
+            font-size: 36px;
+            font-family: $paragraph-font;
+        } 
+        .grid_title {
+            /* position: absolute; */
+            text-align: center;
+            width: 100%; 
+            z-index: 3;
+            color: $main-color;
+            margin-bottom: -206px;
+            margin-top: 180px;
+            font-family: $paragraph-font;
+            font-size: 26px;
+            
+        }
+        //--------------poptfolio hover overlay-----------------
+
+        .viewbutton{ 
+             text-decoration: none;
+            margin-top: 50px;
+            font-family: $paragraph-font;
+            font-size: 26px;
+            background: none;
+            outline: none;
+            font-weight: 100;
+            border: 2px solid white;
+            color: white;
+            padding: 15px;
+        }
+        a:hover {
+            transition: all 0.4s ease-in-out;
+            background: white;
+            color: $dark-blue;
+            transform: scale(0.1, 1);
+        }
+
+
+        p {font-size: 30px;
+            margin: 15px 0;
+            } 
+
+        h3 {font-size: 18px;
+             margin: 10px 0; 
+            }
+    }
+    .project:hover .grid_overlay {
+        transform: translateY(-20%);
+     
+     }
+      .grid_overlay {
+     
+         background-color:rgba(57,137,141,0.5);
+         height: 200px;
+         position: relative; 
+         transform: translateY(101%);
+         transition: all 0.3s ease-in-out;
+         text-align: center;
+         padding-top: 150px;
+         
+     }
+}
+
+@media screen and (min-width: 860px) {
+    .port-pieces {
+        .project { 
+            //flex: 0 1;
+
+            .project_img { max-width: 400px; }
+
+            p {font-size: 35px;} 
+
+            h3 {font-size: 22px;}
+
+      
+        }
+    }
+} 
+
+@media screen and (min-width: 1200px) {
+    .port-pieces {
+        .project { 
+            //flex: 0 1;
+
+            .project_img { max-width: 500px; }
+
+            p {font-size: 42px;} 
+
+            h3 {font-size: 30px;}
+
+       
+        }
+    }
+}
+

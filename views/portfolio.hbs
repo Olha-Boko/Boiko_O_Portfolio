@@ -1,0 +1,54 @@
+
+<section id="section-portfolio" class="panel">
+
+    <div class="port-text">
+        <div class="port-heading">
+            <h1>SOME OF MY PROJECTS</h1>
+        </div>
+        <div class="port-article">
+            <p>Let me show you what I am 
+            doing. Here is some of my
+            works and projects that may 
+            interest you. If you have any 
+            questions or  feedback- just send 
+            me a message.</p>
+        </div>
+    </div>
+    
+
+    <div class="port-pieces">
+        <!-- loop through all our team members 
+        and put their info on the page -->
+        <!--this like a forEach loop with plain JS-->
+        {{#each data}}
+        <div class="project">
+
+
+            <img class="project_img" src="images/{{ImageSmall}}" alt="porfolio image">
+            <p class="text">{{Type}}</p>
+            <h3 class="grid_title">{{Heading}}</h3>
+
+            <div class="grid_overlay">
+                <a class="viewbutton" href="{{ID}}">read more</a>
+            </div>
+
+        </div>
+        {{/each}}
+    </div>
+    
+
+    <!-- this will be filled in on the client side 
+    when we render our AJAX data -->
+    <section class="portfolio-model">
+        <span class="close">+</span>
+
+        <div class="portfolio-content">
+							
+		</div>
+        
+
+    </section>
+    
+</section>
+{{!-- <section id="section4" class="panel">panel 4</section>
+<section id="section5" class="panel"></section> --}}

@@ -39,6 +39,10 @@
 #burgerCon.slideToggle {
   display: block; }
 
+.sticky {
+  position: fixed;
+  top: 0; }
+
 footer {
   margin-top: 380px; }
 
@@ -49,7 +53,13 @@ footer {
 .logo-circle {
   padding-top: 30px; }
   .logo-circle .logo {
-    height: 160px; }
+    height: 160px;
+    animation: circleAppears 0.6s;
+    transform: scale(1) translateZ(0);
+    transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
+    cursor: pointer; }
+  .logo-circle .logo:hover {
+    transform: scale(1.1); }
 
 .footer-con {
   display: flex;
@@ -181,7 +191,6 @@ footer {
     font-size: 20px;
     color: #5e565c; }
   .portfolio-model .close {
-    transform: rotate(45deg);
     position: absolute;
     cursor: pointer;
     font-size: 40px;
@@ -192,7 +201,12 @@ footer {
     padding: 6px 15px;
     border-radius: 50%;
     background: transparent;
-    font-weight: bold; }
+    font-weight: bold;
+    transform: rotate(45deg) scale(1) translateZ(0);
+    animation: circleAppears 0.6s;
+    transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75); }
+  .portfolio-model .close:hover {
+    transform: rotate(65deg) scale(1.2); }
 
 .show-lb {
   display: flex;
@@ -310,7 +324,27 @@ body {
 .top-logo {
   padding-top: 30px; }
   .top-logo .logo {
-    height: 200px; }
+    height: 200px;
+    animation: circleAppears 0.6s;
+    transform: scale(1) translateZ(0);
+    transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
+    cursor: pointer; }
+  .top-logo .logo:hover {
+    transform: scale(1.1); }
+
+@keyframes circleAppears {
+  0% {
+    opacity: 1;
+    transform: scale(0.3); }
+  50% {
+    opacity: 1;
+    transform: scale(1.05); }
+  70% {
+    opacity: 1;
+    transform: scale(0.9); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
 
 .social-con {
   display: none; }
@@ -504,7 +538,13 @@ body {
       height: 53px;
       width: 53px;
       margin-top: 0px;
-      margin-right: 12px; }
+      margin-right: 12px;
+      animation: circleAppears 0.6s;
+      transform: rotate(0deg) scale(1) translateZ(0);
+      transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
+      cursor: pointer; }
+    .social-con .social img:hover {
+      transform: rotate(20deg) scale(1.2); }
   #button {
     display: none; }
   #burgerCon {

@@ -10,6 +10,13 @@ margin-top: 380px;
     padding-top: 30px;
     .logo{
         height: 160px;
+        animation: circleAppears 0.6s;
+        transform: scale(1) translateZ(0);
+        transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+        cursor: pointer;
+    }
+    .logo:hover {
+      transform: scale(1.1);
     }
   }
   .footer-con{

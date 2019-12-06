@@ -31,22 +31,22 @@ const myVM = (() => {
 
         //---------------------------------------------
     
-        window.onscroll = function() {myFunction()};
+        // window.onscroll = function() {myFunction()};
 
-        // Get the navbar
-        var navbar = document.getElementById("mainNav");
+        // // Get the navbar
+        // var navbar = document.getElementById("mainNav");
         
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
+        // // Get the offset position of the navbar
+        // var sticky = navbar.offsetTop;
         
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }  
+        // // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        // function myFunction() {
+        //   if (window.pageYOffset >= sticky) {
+        //     navbar.classList.add("sticky")
+        //   } else {
+        //     navbar.classList.remove("sticky");
+        //   }
+        // }  
     
      //--------------------------------------- 
 
@@ -117,6 +117,8 @@ if (lightbox) {
     //-------------------------contact form-------------------------
 
     const form = document.querySelector('form'), submit = form.querySelector('.buttonFormOne');
+    var thanks = document.querySelector('.box-thanks');
+    var thanksButt = document.querySelector('.close-thanks');
 
     function handleMail(event) {
         event.preventDefault();
@@ -157,7 +159,14 @@ if (lightbox) {
                     // we successfully sent an email via gmail and nodemailer!
                     // flash success here, reset the form
                     form.reset();
-                    alert("email was sent!"); // DO NOT use alerts. they are so hacky and gross.
+                    thanks.classList.add('thanks-show-lb');
+                    thanksButt.addEventListener('click', function() {
+                        thanks.classList.remove('thanks-show-lb');
+                    })
+            
+                    // res.render('formThanks');
+                    // alert"email was sent!"; 
+                    
                 }
             }) // this will be a success or fail message from the server
             .catch((err) => console.log(err));

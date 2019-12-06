@@ -30,6 +30,8 @@ router.get('/contacts', (req, res) => {
     res.render('contacts');
 })
 
+
+
 //hit the portfolio route
 
 router.get('/portfolio', (req, res) => {

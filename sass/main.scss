@@ -180,6 +180,7 @@
     margin-top: 50px;
     margin-bottom: 150px;
 }
+
 .port-heading{
     font-family: $heading-font;
     font-size: 30px;
@@ -284,6 +285,37 @@
     transition: all 0.3s ease-in-out;
     transform: scale(1.1);
 }
+//---------------------video---------------------
+
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+    // width: 1200px;
+
+}
+@media screen and (min-width: 768px){
+    .video-section {
+        width: 700px;
+        margin: 0 auto;
+    
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .video-section {
+        width: 900px;
+    }
+}
+
+@media screen and (min-width:1500px) {
+
+    .video-section {
+        width: 100%;
+    }
+}
 
 
 @media screen and (min-width: 768px) {
@@ -380,6 +412,10 @@
     padding-left: 180px; 
     padding-right: 30px; 
     margin-top: 0px;
+}
+.thanks-text{
+    padding-top: 100px; 
+    margin: 0 auto;
 }
 
 .port-heading{

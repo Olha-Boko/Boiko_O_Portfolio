@@ -62,9 +62,12 @@ const myVM = (() => {
             let piecesContent = `
                 <img src="../images/${project.ImageBig}">
                 <div>
-                <h2>${project.ProjectName}</h2>
-                <h3>${project.ProjectType}</h3>
-                <p>${project.Description}</p>
+                    <h2>${project.ProjectName}</h2>
+                    <h3>${project.ProjectType}</h3>
+                    <p>${project.Description}</p>
+                    <button id="but-info">
+                        <a href="../../views/${project.Info}">read more</a>
+                    </button>
                 </div>
             `;   
 

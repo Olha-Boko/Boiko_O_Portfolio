@@ -42,6 +42,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-bottom: 45px;
     }
     .portfolio-content h2{
         font-family: $heading-font;
@@ -55,13 +56,15 @@
         font-family: $paragraph-font;
         font-size: 24px;
         color: $text-color; 
-        margin-bottom: 50px;
+        margin-bottom: 15px;
     }
     .portfolio-content p{
         font-family: $paragraph-font;
         font-size: 20px;
         color: $text-color; 
         //margin-bottom: 20px;
+        line-height: 26px;
+        text-align: left;
     }
 
 
@@ -166,21 +169,26 @@
         .portfolio-content img{
             display: block;
             width: 400px;
-            height: 300px;
+            //height: 300px;
+            margin-bottom: 40px;
     
-        }   
+        } 
+        .portfolio-content h2{
+            margin-top: 0px;
+        }  
     }  
 }
 @media screen and (min-width: 1000px){
     .portfolio-model{
         .portfolio-content img{
             width: 600px;
-            height: 450px;
+           // height: 450px;
             margin-right: 20px;
+            margin-bottom: 60px;
         } 
-        .portfolio-content div{
-            min-width: 250px;
-        } 
+        // .portfolio-content div{
+        //     min-width: 250px;
+        // } 
         .portfolio-content h2{
             font-size: 38px; 
         }
@@ -189,6 +197,7 @@
         } 
         .portfolio-content p{
             font-size: 22px;
+            line-height: 30px;
         }
     } 
 }
@@ -196,10 +205,10 @@
     .portfolio-model{
         .portfolio-content img{
             width: 800px;
-            height: 600px; 
+            //height: 600px; 
         } 
         .portfolio-content div{
-            max-width: 300px;
+            min-width: 410px;
         } 
         .portfolio-content h2{
             font-size: 42px; 
@@ -207,16 +216,14 @@
         .portfolio-content h3{
             font-size: 30px;
         } 
-        .portfolio-content p{
-            font-size: 22px;
-        }
+        
     } 
 }
 @media screen and (min-width: 1500px){
     .portfolio-model{
        
         .portfolio-content div{
-            max-width: 400px;
+            max-width: 500px;
    
     } 
 }

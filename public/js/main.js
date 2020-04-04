@@ -65,9 +65,23 @@ const myVM = (() => {
                     <h2>${project.ProjectName}</h2>
                     <h3>${project.ProjectType}</h3>
                     <p>${project.Description}</p>
-                    <button id="but-info">
-                        <a href="../../views/${project.Info}">read more</a>
-                    </button>
+
+                </div>
+
+                <img src="../images/${project.ImageTwo}">
+                <div>
+                    
+                    <h3>${project.HeaderTwo}</h3>
+                    <p>${project.InfoTwo}</p>
+
+                </div>
+
+                <img src="../images/${project.ImageThree}">
+                <div>
+                   
+                    <h3>${project.HeaderThree}</h3>
+                    <p>${project.InfoThree}</p>
+
                 </div>
             `;   
 
